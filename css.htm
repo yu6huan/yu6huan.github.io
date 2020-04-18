@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +8,8 @@
 </style>
 </head>
 <body style="background-color: #F4F33A; ">
-	<p style="font-weight: bold;font-size: 30px ">姓名:劉宇桓</p>
+	<p style="font-weight: bold;font-size: 30px ">姓名:劉宇桓(Ray)</p>
+
 	<img src="https://scontent.ftpe4-2.fna.fbcdn.net/v/t1.15752-9/92561280_2318616938443888_6585034804436140032_n.jpg?_nc_cat=100&_nc_sid=b96e70&_nc_oc=AQlyHXEFa4iVaq0zBWCIIa0njBacqMvm38ReA3SeLTn2-dt7ksTtzCdNXgQxx9fIDDs&_nc_ht=scontent.ftpe4-2.fna&oh=7f545608ecca9835355793b305e2f962&oe=5EAF4160" width="200" height="230"></img>
   <p style="color: #000000;font-size: 25px">生日:10/31</p>
   <div style="color: #FF0000;font-size: 25px">興趣:棒球、籃球</div>
@@ -16,7 +18,21 @@
   
   <div style="color: #FF0000;">科系</div>
   	<img src="https://www.tkbtv.com.tw/p20180605EC003_1100_380/toPic.action" width="245" height="250">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+  			$("button").click(function(){
+    			$("p").toggle();
+			});
+		});
+	</script>
+	<br>
+	<h3>自我介紹</h3>
+	<button>顯示/隱藏</button>
+		
+		<p>
+			I am a student in the department of computer science,I good at telling joke,everyone enjoy it I told.I usually play basketball when I am free.My dream is to be a engineer.
+		</p>
   
   <h1 style="background-color: #F4F33A;">
   <div style="color: #FF0000;font-size: 20px;font-weight: bold;">個人照片</div>
@@ -28,10 +44,29 @@
   <img src="https://scontent.ftpe4-1.fna.fbcdn.net/v/t1.15752-9/91709023_223019525601067_1009481481094955008_n.jpg?_nc_cat=106&_nc_sid=b96e70&_nc_oc=AQmEqbxsA_uCuOqXamtXGv6zh3MhohGcDRP9r7Jh2AFh5H-M2R2_pBrRU0Zpct3vHqk&_nc_ht=scontent.ftpe4-1.fna&oh=142aee452e4cdc955a6bc24941766962&oe=5EB15A64" width="200" height="250">
   <img src="https://scontent.ftpe4-2.fna.fbcdn.net/v/t1.15752-9/91908495_210787613681101_6521118140519153664_n.jpg?_nc_cat=110&_nc_sid=b96e70&_nc_oc=AQnE-rzL6129xPIILOE6WOlButGE5LbDi-AQHUpM2cNdFGKNowpM4qg5yvKbQnuEoug&_nc_ht=scontent.ftpe4-2.fna&oh=adfd010825f94bdfe5bcc3b96ab72d93&oe=5EAE01F8" width="200" height="250">
   </h1>
-  
-  
+
+<button class="js-back-to-top back-to-top">︽</button>
+
+<script>
+	$(function(){
+		var $win=$(window);
+		var $backToTop=$('.js-back-to-top');
+		
+		$win.scroll(function(){
+			if($win.scrollTop()>100){
+				$backToTop.show();
+			}else{
+				$backToTop.hide();
+			}
+		});
+		
+		$backToTop.click(function(){
+			$('html,body').animate({scrollTop:0},200);
+		});
+	});
+</script>
 
 
-  	</body>
+</body>
   
   	
